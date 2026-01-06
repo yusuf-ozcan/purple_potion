@@ -11,19 +11,18 @@ defmodule ElixirTaskManager.MixProject do
     ]
   end
 
-  # Uygulama başladığında hangi modüllerin çalışacağını belirler
   def application do
     [
       extra_applications: [:logger],
-      mod: {ElixirTaskManager.Application, []} # Uygulama giriş noktası
+      mod: {ElixirTaskManager.Application, []}
     ]
   end
 
-  # Projenin bağımlılıkları (Kütüphaneler)
   defp deps do
     [
-      {:httpoison, "~> 2.0"},    # HTTP istekleri göndermek için
-      {:plug_cowboy, "~> 2.6"}   # Web sunucusu oluşturmak için
+      {:httpoison, "~> 2.0"},
+      {:plug_cowboy, "~> 2.6"},
+      {:jason, "~> 1.4"}
     ]
   end
 end

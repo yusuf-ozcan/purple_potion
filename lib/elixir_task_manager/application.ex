@@ -4,14 +4,20 @@ defmodule ElixirTaskManager.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # 1. Sayaç İşçisi (Başlangıç değeri 0)
+      # --- PROJECT 1: Counter & Monitoring ---
+      # Background worker with initial state 0
       {SimpleWorker, 0},
-      
-      # 2. Web Sunucusu (Port 4000)
-      {Plug.Cowboy, scheme: :http, plug: ElixirTaskManager.Router, options: [port: 4000]}
+      # Web server on Port 4000
+      {Plug.Cowboy, scheme: :http, plug: ElixirTaskManager.Router, options: [port: 4000]},
+
+      # --- PROJECT 2: Purple Exchange API ---
+      # Exchange server to manage currency data
+      {PurpleExchange.Server, []},
+      # API access on a DIFFERENT Port: 4001
+      {Plug.Cowboy, scheme: :http, plug: PurpleExchange.Router, options: [port: 4001]}
     ]
 
-    # Gözetim stratejisi: Biri çökerse sadece o yeniden başlasın
+    # Strategy :one_for_one means if one process crashes, only that one is restarted.
     opts = [strategy: :one_for_one, name: ElixirTaskManager.Supervisor]
     Supervisor.start_link(children, opts)
   end
