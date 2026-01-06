@@ -9,9 +9,26 @@ defmodule TaskManager do
 
   def show(tasks) do
     IO.puts("\n--- YOUR TASKS ---")
-    tasks 
-    |> Enum.reverse() 
-    |> Enum.with_index(1) 
-    |> Enum.each(fn {name, i} -> IO.puts("#{i}. #{name}") end)
+
+    tasks
+    |> Enum.reverse()
+    |> Enum.with_index(1)
+    |> Enum.each(fn {name, i} ->
+      IO.puts("#{i}. #{name}")
+    end)
+  end
+
+  @doc """
+  Removes a task by its name using pattern matching.
+  """
+  def remove(tasks, task_name) do
+    List.delete(tasks, task_name)
+  end
+
+  @doc """
+  Returns the total count of tasks.
+  """
+  def count(tasks) do
+    Enum.count(tasks)
   end
 end
