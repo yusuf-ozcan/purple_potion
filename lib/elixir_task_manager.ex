@@ -31,4 +31,27 @@ defmodule TaskManager do
   def count(tasks) do
     Enum.count(tasks)
   end
+
+  @doc """
+  Saves the task list to a file.
+  'erlang.term_to_binary' converts Elixir data into a format that can be stored.
+  """
+  def save(tasks, filename) do
+    binary = :erlang.term_to_binary(tasks)
+    File.write(filename, binary)
+  end
+
+  @doc """
+  Loads the task list from a file.
+  """
+  def load(filename) do
+    case File.read(filename) do
+      {:ok, binary} ->
+        :erlang.binary_to_term(binary)
+
+      {:error, _reason} ->
+        IO.puts("File not found! Starting with an empty list.")
+        []
+    end
+  end
 end
