@@ -1,0 +1,40 @@
+2026-01-06 22:40:32.786846Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:40:32.969709Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:40:33.435359Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:40:33.461554Z - ✅ UP: https://github.com
+2026-01-06 22:41:02.789488Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:41:02.834409Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:41:02.883409Z - ✅ UP: https://github.com
+2026-01-06 22:41:03.235666Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:41:32.791501Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:41:32.836231Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:41:32.877881Z - ✅ UP: https://github.com
+2026-01-06 22:41:33.759563Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:42:02.793639Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:42:02.836330Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:42:02.885957Z - ✅ UP: https://github.com
+2026-01-06 22:42:03.250003Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:42:32.795478Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:42:32.916361Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:42:33.161837Z - ✅ UP: https://github.com
+2026-01-06 22:42:33.169266Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:43:02.796506Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:43:02.840270Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:43:02.926155Z - ✅ UP: https://github.com
+2026-01-06 22:43:03.361844Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:43:32.798508Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:43:32.925443Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:43:32.928675Z - ✅ UP: https://github.com
+2026-01-06 22:43:33.176949Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:44:02.800476Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:44:02.841947Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:44:02.930912Z - ✅ UP: https://github.com
+2026-01-06 22:44:03.170769Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:44:32.801475Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:44:32.843249Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:44:33.175608Z - ✅ UP: https://github.com
+2026-01-06 22:44:33.180704Z - ⚠️ ISSUE (301): https://google.com
+2026-01-06 22:45:02.802627Z - --- Kontrol Başlatılıyor ---
+2026-01-06 22:45:02.867282Z - ❌ DOWN: https://invalid-url.test - Sebep: :nxdomain
+2026-01-06 22:45:02.867354Z - ❌ DOWN: https://github.com - Sebep: :closed
+2026-01-06 22:45:03.194263Z - ⚠️ ISSUE (301): https://google.com
